@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    // "types": ["vite-plugin-eslint"],
+    "types": ["vite/client"],
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": "./src",
+    "paths": {
+      "app/*": ["app/*"],
+      "pages/*": ["pages/*"],
+      "widgets/*": ["widgets/*"],
+      "entities/*": ["entities/*"],
+      "shared/*": ["shared/*"]
+    }
+  },
+  "include": [
+    "src",
+    "vite.config.ts",
+    "static/models",
+    "src/app",
+    "static/holistic_solution_packed_assets_loader.js",
+    "static/holistic_solution_simd_wasm_bin.js"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
