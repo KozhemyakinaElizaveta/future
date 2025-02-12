@@ -7,8 +7,8 @@
 ```
 git clone https://github.com/KozhemyakinaElizaveta/future.git
 cd future
-npm ci
-npm start
+yarn install
+yarn dev
 ```
 ##### Стек технологий
 - HTML
